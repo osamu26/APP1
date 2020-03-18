@@ -1,0 +1,19 @@
+.gallery{
+  background-color:pink;
+  height:100vh;
+  width:100vw;
+  .gallery_header{ 
+    height:70px;
+    width:100%;
+    background-color: pink;
+    color:white;
+    line-height:70px;
+    
+  }
+  .gallery_main{
+    display:flex;
+    justify-content: space-between;
+    .gallery_main1{
+    }
+  }
+}

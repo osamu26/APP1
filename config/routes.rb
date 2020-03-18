@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'posts#index'
+  get 'gallery/index', to: 'gallery#index'
+  get 'blogs', to: 'blogs#index'
+  get 'blogs/new', to: 'blogs#new'
+  post 'blogs', to:'blogs#create'
+  post 'blogs', to: 'blogs#create'
 end

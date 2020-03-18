@@ -1,0 +1,9 @@
+<h1>新規投稿ページ</h1>
+
+<%= form_tag('/blogs', method: :post) do %> 
+      <p>投稿日時<input type="date" name="date" class="date"> </p>
+   　　  <p><textarea name="title" cols="30" rows="1"></textarea></p>
+   <textarea name="content" cols="30" rows="5"></textarea>
+  　　 <p><input type="submit" value="投稿する"></p>
+
+<% end %>
