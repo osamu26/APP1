@@ -1,0 +1,17 @@
+<div class="main-title">ブログ</div>
+
+<%= link_to '新規投稿', '/blogs/new' %>
+  
+<% @blogs.each do |blog| %>
+  <div class="blog">
+    <div class="blog-date">
+      投稿日時：<%= blog.date %>
+    </div>
+    <div class="blog-title">
+      タイトル:<%= blog.title %>
+    </div>
+    <div class="blog-content">
+      <%= blog.content %>
+    </div>
+  </div>
+<% end %>
